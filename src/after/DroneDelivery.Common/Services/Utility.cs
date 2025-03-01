@@ -1,27 +1,16 @@
-﻿namespace DroneDelivery.Common.Services
-{
-    public class Utility
-    {
-        public static long DoWork(int permutations)
-        {
-            long count = 0;
-
-            for (int i = 0; i < permutations; i++)
-            {
-                for (int j = 0; j < permutations; j++)
-                {
-                    for (int k = 0; k < permutations; k++)
-                    {
-                        for (int l = 0; l < permutations; l++)
-                        {
-
-                        }
-                        count++;
-                    }
-                }
-            }
-
-            return count;
-        }
-    }
+namespace DroneDelivery.Common.Services 
+{ 
+    public class Utility 
+    { 
+        public static long DoWork(int workUnits) 
+        { 
+            long count = 0; 
+            // Simulate work by doing a basic operation 
+            for (int i = 0; i < workUnits; i++) 
+            { 
+                count += i;  // Simpler operation to simulate workload 
+            } 
+            return count; 
+        } 
+    } 
 }
